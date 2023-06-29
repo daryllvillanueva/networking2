@@ -1,0 +1,67 @@
+ /* Custom styling */
+ body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .navbar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar #logo {
+    height: 30px;
+    width: auto;
+  }
+
+  .navbar .nav-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #212529;
+  }
+
+  .section {
+    padding: 40px;
+  }
+
+  .section h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
+  }
+
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .storage-usage,
+  .recent-files,
+  .activity-log {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .storage-usage h2,
+  .recent-files h2,
+  .activity-log h2 {
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+
+  .file-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .file-list li img {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  /* Add your additional styling here */

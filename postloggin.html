@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaaS Cloud Interface</title>
+  <link rel="icon" href="Picture1.png" type="image/x-icon">
+  <link rel="stylesheet" href="postlogin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="staas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="postlogin.css">
+
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="nav-box-left" id="googlebox">
+      <div class="nav-sub-box1" id="googleicon">
+        <img src="Picture1.png" id="logo" alt="logo">
+        <a id="logo-title" href="#googlebox"><span class="into-title">OneCloud</span></a>
+      </div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard section -->
+  <section id="dashboard" class="section">
+    <h1>Dashboard</h1>
+    <div class="dashboard-content">
+      <div class="storage-usage">
+        <h2>Storage Usage</h2>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <p>50% used</p>
+      </div>
+      <div class="recent-files">
+        <h2>Recent Files</h2>
+        <ul class="file-list">
+          <li><img src="file-icon.png" alt="File Icon"><a href="#">Document.pdf</a></li>
+          <li><img src="file-icon.png" alt="File Icon"><a href="#">Image.jpg</a></li>
+          <li><img src="file-icon.png" alt="File Icon"><a href="#">Presentation.pptx</a></li>
+        </ul>
+      </div>
+      <div class="activity-log">
+        <h2>Activity Log</h2>
+        <ul class="log-list">
+          <li><span class="log-time">10:30 AM</span> Uploaded Document.pdf</li>
+          <li><span class="log-time">11:15 AM</span> Shared Image.jpg with John</li>
+          <li><span class="log-time">12:00 PM</span> Deleted Presentation.pptx</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- File Explorer section -->
+  <section id="file-explorer" class="section">
+    <h1>File Explorer</h1>
+    <div class="explorer-content">
+      <div class="folder">
+        <img src="folder-icon.png" alt="Folder Icon">
+        <h2>Documents</h2>
+      </div>
+      <ul class="file-list">
+        <li>
+          <img src="file-icon.png" alt="File Icon">
+          <a href="#">Document1.pdf</a>
+        </li>
+        <li>
+          <img src="file-icon.png" alt="File Icon">
+          <a href="#">Document2.docx</a>
+        </li>
+        <li>
+          <img src="file-icon.png" alt="File Icon">
+          <a href="#">Document3.txt</a>
+        </li>
+        <!-- Add more file entries as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- File Preview section -->
+  <section id="file-preview" class="section">
+    <h1>File Preview</h1>
+    <div class="preview-content">
+      <div class="file-preview">
+        <img src="file-preview.png" alt="File Preview">
+        <h2>Document.pdf</h2>
+      </div>
+      <div class="file-details">
+        <p>File Size: 2.5MB</p>
+        <p>Created: June 28, 2023</p>
+        <p>Last Modified: June 29, 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- File Sharing and Collaboration section -->
+  <section id="file-sharing" class="section">
+    <h1>File Sharing and Collaboration</h1>
+    <div class="sharing-content">
+      <div class="share-file">
+        <h2>Share File</h2>
+        <form>
+          <input type="text" placeholder="Enter recipient's email">
+          <button type="submit">Share</button>
+        </form>
+      </div>
+      <div class="collaborators">
+        <h2>Collaborators</h2>
+        <ul class="collaborator-list">
+          <li>
+            <img src="user-avatar.png" alt="User Avatar">
+            <span>John Doe</span>
+          </li>
+          <li>
+            <img src="user-avatar.png" alt="User Avatar">
+            <span>Jane Smith</span>
+          </li>
+          <!-- Add more collaborators as needed -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- File Versioning section -->
+  <section id="file-versioning" class="section">
+    <h1>File Versioning</h1>
+    <div class="versioning-content">
+      <div class="file-versions">
+        <h2>File Versions</h2>
+        <ul class="version-list">
+          <li>
+            <span class="version-number">Version 1</span>
+            <span class="version-date">Last Modified: June 1, 2023</span>
+          </li>
+          <li>
+            <span class="version-number">Version 2</span>
+            <span class="version-date">Last Modified: June 10, 2023</span>
+          </li>
+          <!-- Add more file versions as needed -->
+        </ul>
+      </div>
+      <div class="version-details">
+        <h2>Version Details</h2>
+        <div class="version-info">
+          <h3>Version 2</h3>
+          <p>Last Modified: June 10, 2023</p>
+          <p>Size: 2.5 MB</p>
+          <p>Uploaded by: John Doe</p>
+          <a href="#" class="download-link">Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Storage Management section -->
+  <section id="storage-management" class="section">
+    <h1>Storage Management</h1>
+    <div class="storage-management-content">
+      <div class="quota-information">
+        <h2>Quota Information</h2>
+        <p>Used Space: 50 GB</p>
+        <p>Available Space: 50 GB</p>
+        <p>Total Space: 100 GB</p>
+        <div class="quota-bar">
+          <div class="quota-progress"></div>
+        </div>
+      </div>
+      <div class="storage-settings">
+        <h2>Storage Settings</h2>
+        <form>
+          <label for="storage-limit">Set Storage Limit (GB):</label>
+          <input type="number" id="storage-limit" name="storage-limit" min="1" max="100" step="1">
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Account Settings section -->
+  <section id="account-settings" class="section">
+    <h1>Account Settings</h1>
+    <div class="account-settings-content">
+      <h2>Profile Information</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+  
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Activity Logs section -->
+  <section id="activity-logs" class="section">
+    <h1>Activity Logs</h1>
+    <div class="activity-logs-content">
+      <ul class="log-list">
+        <li>
+          <span class="log-time">10:30 AM</span> Uploaded Document.pdf
+        </li>
+        <li>
+          <span class="log-time">11:15 AM</span> Shared Image.jpg with John
+        </li>
+        <li>
+          <span class="log-time">12:00 PM</span> Deleted Presentation.pptx
+        </li>
+        <!-- Add more log entries as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Help and Support section -->
+  <section id="help-support" class="section">
+    <h1>Help and Support</h1>
+    <div class="help-support-content">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to contact our support team.</p>
+      <div class="contact-details">
+        <p>Email: support@staascloud.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <h2>FAQs</h2>
+      <div class="faq-list">
+        <h3>How can I upload a file?</h3>
+        <p>To upload a file, navigate to the File Explorer section and click on the "Upload" button.</p>
+        
+        <h3>How can I share a file with others?</h3>
+        <p>To share a file, select the file in the File Explorer section and click on the "Share" button.</p>
+        
+        <!-- Add more FAQs as needed -->
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
